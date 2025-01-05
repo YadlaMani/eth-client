@@ -1,8 +1,9 @@
 import React from "react";
-import { useConnect } from "wagmi";
+import { useConnect, useAccount } from "wagmi";
 
 const WalletOptions = () => {
   const { connectors, connect } = useConnect();
+  const account = useAccount();
 
   return (
     <>
